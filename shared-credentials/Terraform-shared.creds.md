@@ -9,7 +9,7 @@ cat credentials ( to view access key and secret access key)
 ## in the provider.tf file update the provider creds with the path to your config and credentials files ( source: https://registry.terraform.io/providers/hashicorp/aws/latest/docs):
 provider "aws" {
   shared_config_files      = ["~/.aws/config"]
-  shared_credentials_files = ["~/.aws/credentials"]
+  shared_credentials_files = ["~/.aws/creds"]
   profile                  = "default"
 }
 
